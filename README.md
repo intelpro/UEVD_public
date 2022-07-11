@@ -1,7 +1,7 @@
 # EDUTV(ECCV 2022, Oral presentation)
 **This is official repository of EDUTV(Event-guied Deblurring of Unknown Exposure Time Videos)**
 
-## Qualitative Videos on real-world and synthetic unknown exposure time videos
+### Demo Videos on real world blurry videos
 
 ## Color-DVS dataset for event-guided motion deblurring
 #### The first public event-based deblurring dataset. Our dataset contain diverse scene including real-world event using color-DAVIS camera.
