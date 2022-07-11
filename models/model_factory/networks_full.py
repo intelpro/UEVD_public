@@ -292,7 +292,7 @@ class EventDeblurNet(nn.Module):
         # scale information
         self.scale = 3
         # ETES module
-        self.ETES_module = Event_selection(self.scale, n_feat)
+        self.EXES_module = Event_selection(self.scale, n_feat)
         # feature fusion
         self.FF_module = nn.ModuleList([DAU_ours_v5(n_feat_total*2**i) for i in range(self.scale)])
         # flag to use ES_module 
@@ -314,7 +314,7 @@ class EventDeblurNet(nn.Module):
                                        f_event[8][idx][:, None, ...]), dim=1) 
             f_event_new.append(f_event_stack)
         # feature fusion
-        f_event_new2, viz = self.ETES_module(f_event_new, f_blur)
+        f_event_new2, viz = self.EXES_module(f_event_new, f_blur)
         x_input = []
         for i in range(self.scale):
             x_input.append(self.FF_module[i](f_event_new2[i], f_blur[i]))

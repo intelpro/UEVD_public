@@ -78,6 +78,9 @@ def batch2device(dictionary_of_tensors):
         return {key: batch2device(value) for key, value in dictionary_of_tensors.items()}
     return dictionary_of_tensors.cuda()
 
+def save_img(filepath, img):
+    cv2.imwrite(filepath,cv2.cvtColor(img, cv2.COLOR_RGB2BGR))
+
 def str2bool(v):
     return v.lower() in ('true')
 

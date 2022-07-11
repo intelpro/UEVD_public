@@ -257,7 +257,6 @@ class Decoder_MS(nn.Module):
         self.pred_image1 = conv3x3(4*nf, 3, stride=1)
         self.pred_image2 = conv3x3(2*nf, 3, stride=1)
 
-
     def forward(self, x_input):
         # level 0
         x_ = self.deconv_0_1(x_input[2])
@@ -273,7 +272,6 @@ class Decoder_MS(nn.Module):
         x_ = self.deconv_2_2(x_in) ########### 1GB
         img2 = self.pred_image2(x_)# 1GB
         return [img2, img1, img0]
-
 
 
 class EventDeblurNet(nn.Module):
@@ -293,7 +291,7 @@ class EventDeblurNet(nn.Module):
         # scale information
         self.scale = 3
         # feature fusion
-        self.ETES_module = Event_selection(self.scale, n_feat)
+        self.EXES_module = Event_selection(self.scale, n_feat)
         # feature fusion
         self.FF_module = nn.ModuleList([DAU_ours_v5(n_feat_total*2**i) for i in range(self.scale)])
         # flag to use ES_module 
@@ -315,7 +313,7 @@ class EventDeblurNet(nn.Module):
                                        f_event[8][idx][:, None, ...]), dim=1) 
             f_event_new.append(f_event_stack)
         # feature fusion
-        f_event_new2, viz = self.ETES_module(f_event_new, f_blur)
+        f_event_new2, viz = self.EXES_module(f_event_new, f_blur)
         x_input = []
         for i in range(self.scale):
             x_input.append(self.FF_module[i](f_event_new2[i], f_blur[i]))
