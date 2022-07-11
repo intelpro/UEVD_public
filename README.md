@@ -7,7 +7,7 @@
 #### The first public event-based deblurring dataset. Our dataset contain diverse scene including real-world event using color-DAVIS camera.
 You can download the raw-data(collected frame and events) from this google drive [link](https://drive.google.com/file/d/16qlLDOm5Q6fqpDYxNYMtm7reGfzaOyra/view?usp=sharing)
 
-Also, you can download the processed data for handling unknown exposure time videos [link]()
+Also, you can download the processed data for handling unknown exposure time videos [link](https://drive.google.com/file/d/1AxAwtZKP0NUCRUbiLpgZZ1ggrnLF2hbZ/view?usp=sharing)
 ## Requirements
 Our code is tested using PyTorch1.2 and tested under following condition:
 * Python 3.7
