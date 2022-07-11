@@ -1,4 +1,4 @@
-# EDUTV(ECCV 2022, Oral presentation)
+# UDUTV(ECCV 2022, Oral presentation)
 **This is official repository of EDUTV(Event-guied Deblurring of Unknown Exposure Time Videos)**
 
 ### Demo Videos on real world blurry videos
