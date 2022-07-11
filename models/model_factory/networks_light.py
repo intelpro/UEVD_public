@@ -3,7 +3,7 @@ import torch.nn.functional as F
 import torch.nn as nn
 from torch.nn.modules import conv
 from models.submodules.net_basics import *
-from torch.nn.modules import conv
+import torch.nn.functional as F
 from libs.kernelconv2d import KernelConv2D
 
 

@@ -7,9 +7,10 @@ from collections import OrderedDict
 import datetime
 import argparse
 import os
+import os.path as osp
 from math import ceil
 from utils.dataloader import *
-from models.OursUnknownDeblur_deblur import UnknwonDeblurNet
+from models.DeblurNet import UnknwonDeblurNet
 import matplotlib.pyplot as plt
 import torch.optim as optim
 
@@ -35,11 +36,11 @@ def get_argument():
     # tb data
     parser.add_argument('--tb_update_thresh', type = int, default=200)
     parser.add_argument('--tb_folder', type=str, default='./experiments')
-    parser.add_argument('--data_dir', type = str, default = '/media/event_video_dataset/dvs_color_blur/')
-    parser.add_argument('--train_filename', type = str, default = './filename/dvs_dataset/unknown_exposure/train.txt')
-    parser.add_argument('--test_filename_list', type = str , default=['./filename/dvs_dataset/unknown_exposure/test_9-5.txt',
-                                                                      './filename/dvs_dataset/unknown_exposure/test_11-3.txt', \
-                                                                      './filename/dvs_dataset/unknown_exposure/test_13-1.txt'])
+    parser.add_argument('--data_dir', type = str, default = '/media/mnt3/event_dataset/real_blurry_event_dataset/blur_dataset/unknown_exposure_public/')
+    parser.add_argument('--train_filename', type = str, default = './filename/dvs_dataset/train.txt')
+    parser.add_argument('--test_filename_list', type = str , default=['./filename/dvs_dataset/test_9-5.txt',
+                                                                      './filename/dvs_dataset/test_11-3.txt', \
+                                                                      './filename/dvs_dataset/test_13-1.txt'])
     parser.add_argument('--use_multigpu', type = str2bool, default='True')
     parser.add_argument('--resume_net', type=str2bool, default='False')
     parser.add_argument('--resume_path', type=str, default=None)
@@ -59,7 +60,7 @@ class Trainer(object):
         self.epochs = args.epochs
         self.batchsize = args.batch_size
         ## tensorboard directory
-        tb_path = args.tb_folder + datetime.datetime.now().strftime('%y%m%d-' + args.experiment_name + '/%H%M')
+        tb_path = osp.join(args.tb_folder, datetime.datetime.now().strftime('%y%m%d-' + args.experiment_name + '/%H%M'))
         self.tb = SummaryWriter(tb_path, flush_secs=1)
         # logger
         self._logger = get_logger(tb_path, 'log.txt', 'append')

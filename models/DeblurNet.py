@@ -2,7 +2,6 @@ from utils.utils import AverageMeter
 import torch.nn as nn
 import torch
 import os
-from models.submodules.submodule import *
 from math import ceil
 import importlib
 
@@ -133,7 +132,6 @@ class UnknwonDeblurNet(object):
         return self.loss
 
     def update_loss_meters(self):
-        # total loss update
         self.loss_total_meter.update(self.loss.item(), 1)
     
     def reset_loss_meters(self):

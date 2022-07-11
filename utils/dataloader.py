@@ -22,7 +22,7 @@ class DataLoader_dvs_train(data.Dataset):
         self.events_vox_1 = [os.path.join(data_dir, mode, line.split(' ')[0], 'event_voxel',  \
                             line.split(' ')[1], line.split(' ')[2], line.split(' ')[4].split('\n')[0]) for line in open(filename)]
         # clean gt images
-        self.clean_images_gt = [os.path.join(data_dir, mode, line.split(' ')[0], 'clean_gt_images', \
+        self.clean_images_gt = [os.path.join(data_dir, mode, line.split(' ')[0], 'clean_gt_images', line.split(' ')[1], \
                                 line.split(' ')[2], line.split(' ')[4].split('\n')[0]) for line in open(filename)]
         # transform
         self.transform = transforms.ToTensor()
@@ -87,8 +87,8 @@ class DataLoader_dvs_test(data.Dataset):
         self.events_vox_1 = [os.path.join(data_dir, mode, line.split(' ')[0], 'event_voxel',  \
                             line.split(' ')[1], line.split(' ')[2], line.split(' ')[4].split('\n')[0] + '.npz') for line in open(filename)]
         # clean gt images
-        self.clean_images_gt = [os.path.join(data_dir, mode, line.split(' ')[0], 'clean_gt_images', line.split(' ')[2], \
-                                line.split(' ')[4].split('\n')[0] + '.png') for line in open(filename)]
+        self.clean_images_gt = [os.path.join(data_dir, mode, line.split(' ')[0], 'clean_gt_images', line.split(' ')[1], \
+                                line.split(' ')[2], line.split(' ')[4].split('\n')[0] + '.png') for line in open(filename)]
         # transform
         self.transform = transforms.ToTensor()
         self.training = training

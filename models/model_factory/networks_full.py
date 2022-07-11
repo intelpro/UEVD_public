@@ -1,15 +1,9 @@
-from models.submodules.net_basics import conv3x3_leaky_relu
 import torch
 import torch.nn as nn
 from torch.nn.modules import conv
-from models.submodules.submodule import *
-from models.submodules.net_basics import conv3x3_leaky_relu
-import torch
-import torch.nn as nn
-from torch.nn.modules import conv
-from models.submodules.submodule import *
+from models.submodules.net_basics import *
+import torch.nn.functional as F
 from libs.kernelconv2d import KernelConv2D
-
 
 
 class ca_layer_act(nn.Module):
@@ -190,7 +184,7 @@ class Event_selection(nn.Module):
         return f_event_attended, ca_map_list
 
 class DAU_ours_v5(nn.Module):
-    def __init__(self, n_feat, kernel_size=3, filter_ks=3, reduction=8, bias=False, bn=False, act=nn.PReLU(), res_scale=1):
+    def __init__(self, n_feat, kernel_size=3, filter_ks=3, bias=False, bn=False, act=nn.PReLU(), res_scale=1):
         super(DAU_ours_v5, self).__init__()
         modules_body_0 = [conv(n_feat, n_feat, kernel_size, bias=bias), nn.ReLU(), conv(n_feat, n_feat, kernel_size, bias=bias)]
         modules_body_1 = [conv(n_feat, n_feat, kernel_size, bias=bias), nn.ReLU()]
