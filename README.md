@@ -1,8 +1,8 @@
 # UDUTV(ECCV 2022, Oral presentation)
 **This is official repository of EDUTV(Event-guied Deblurring of Unknown Exposure Time Videos)**
 
-### Demo Videos on real world blurry videos
-![video_results_real_blur](https://user-images.githubusercontent.com/36500265/178305684-1f23efcd-9287-4aaa-8ea7-68e9fea73f7a.gif)
+### Demo videos on real world blurry videos
+![real_blur_045_resized](/figure/video_results_real_blur.gif "real_blur_045_resized")
 
 
 ## Color-DVS dataset for event-guided motion deblurring
