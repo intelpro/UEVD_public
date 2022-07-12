@@ -23,8 +23,7 @@ pip install -r requirements.txt
 bash install.sh
 ```
 ## Contact
-If you have any question, please send an email me \
-intelpro@kaist.ac.kr
+If you have any question, please send an email me(intelpro@kaist.ac.kr)
 
 ## License
 The project codes and datasets can be used for research and education only. 
