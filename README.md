@@ -12,17 +12,6 @@
 
 
 
-## Table of Contents
-1. [Color-DVS](#Color-DVS) 
-1. [Installation](#Installation)
-1. [Test](#Test)
-1. [Test_Custom](#Test_Custom)
-1. [Training](#Training)
-1. [Results](#Results)
-1. [Reference](#Reference)
-1. [Contact](#Contact)
-
-
 ## Color-DVS
 #### The first public event-based deblurring dataset. Our dataset contain diverse scene including real-world event using color-DAVIS camera.
 You can download the raw-data(collected frame and events) from this google drive [link](https://drive.google.com/file/d/16qlLDOm5Q6fqpDYxNYMtm7reGfzaOyra/view?usp=sharing)
