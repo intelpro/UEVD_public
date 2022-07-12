@@ -1,8 +1,6 @@
 # UDUTV(ECCV 2022, Oral presentation)
 **This repository is for the ECCV 2022 paper, "Event-guided Deblurring of Unknown Exposure Time Videos".
 
-
-
 \[[ArXiv](https://arxiv.org/pdf/2112.06988.pdf)\]
 \[[ECCV2022]()\] 
 \[[Supp]()\] 
@@ -17,10 +15,9 @@
 You can download the raw-data(collected frame and events) from this google drive [link](https://drive.google.com/file/d/16qlLDOm5Q6fqpDYxNYMtm7reGfzaOyra/view?usp=sharing)
 
 Also, you can download the processed data for handling unknown exposure time videos [link](https://drive.google.com/file/d/1AxAwtZKP0NUCRUbiLpgZZ1ggrnLF2hbZ/view?usp=sharing)
-## Prerequisite
-Our code is tested using PyTorch1.2 and tested under following condition:
-* Python 3.7
-* Pytorch 1.2.0
-* Cuda 10.2
-* NVIIDIA TITAN RTX 
-* Ubuntu 18.04
+## Installation
+This code was tested with pytorch 1.2.0, CUDA 10.2, Python 3.7 and Ubuntu 18.04 using TITAN RTX GPU
+```
+pip install -r requirements.txt
+bash install.sh
+```
