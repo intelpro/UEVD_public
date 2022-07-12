@@ -1,5 +1,8 @@
 # UDUTV(ECCV 2022, Oral presentation)
 **This is official repository of EDUTV(Event-guied Deblurring of Unknown Exposure Time Videos)**
+\[[ArXiv](https://arxiv.org/pdf/2112.06988.pdf)\]
+\[[ECCV2022]()\] 
+\[[Supp.](https://openaccess.thecvf.com/content/ICCV2021/supplemental/Sim_XVFI_eXtreme_Video_ICCV_2021_supplemental.pdf)\] \[[Demo(YouTube)](https://www.youtube.com/watch?v=5qAiffYFJh8)\] \[[Oral12mins(YouTube)](https://www.youtube.com/watch?v=igwy1TJQiRc&t=13s)\] \[[Flowframes(GUI)](https://nmkd.itch.io/flowframes)\]
 
 ### Demo videos on real world blurry videos
 ![real_blur_045_resized](/figure/video_results_real_blur.gif "real_blur_045_resized")
