@@ -1,5 +1,7 @@
 # UDUTV(ECCV 2022, Oral presentation)
-**This is official repository of EDUTV(Event-guied Deblurring of Unknown Exposure Time Videos)**
+**This repository is for the ECCV 2022 paper, "Event-guided Deblurring of Unknown Exposure Time Videos".
+
+
 
 \[[ArXiv](https://arxiv.org/pdf/2112.06988.pdf)\]
 \[[ECCV2022]()\] 
@@ -15,7 +17,7 @@
 You can download the raw-data(collected frame and events) from this google drive [link](https://drive.google.com/file/d/16qlLDOm5Q6fqpDYxNYMtm7reGfzaOyra/view?usp=sharing)
 
 Also, you can download the processed data for handling unknown exposure time videos [link](https://drive.google.com/file/d/1AxAwtZKP0NUCRUbiLpgZZ1ggrnLF2hbZ/view?usp=sharing)
-## Requirements
+## Prerequisite
 Our code is tested using PyTorch1.2 and tested under following condition:
 * Python 3.7
 * Pytorch 1.2.0
