@@ -3,7 +3,7 @@
 
 \[[ArXiv](https://arxiv.org/pdf/2112.06988.pdf)\]
 \[[ECCV2022]()\] 
-\[[Supp.]()\] 
+\[[Supp]()\] 
 \[[Oral(YouTube)]()\]
 
 ### Demo videos on real world blurry videos
