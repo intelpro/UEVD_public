@@ -1,4 +1,4 @@
-# UDUTV(ECCV 2022, Oral presentation)
+# UEVD(ECCV 2022, Oral presentation)
 **This repository is for the ECCV 2022 paper, "Event-guided Deblurring of Unknown Exposure Time Videos".**
 
 \[[ArXiv](https://arxiv.org/pdf/2112.06988.pdf)\]
