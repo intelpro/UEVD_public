@@ -46,11 +46,8 @@ python train_deblur_dvs.py --dataset 'dvs' --epochs 21 --batch_size 2 \
 
 
 ## Results
-<!-- TBD: change results, Tables -->
+* The quantitative comparisons are attached as belows for a reference.
 ![table_2](/figure/table2.png "table_2")
-
-
-![real_blur_045_resized](/figure/video_results_real_blur.gif "real_blur_045_resized")
 
 
 
