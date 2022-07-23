@@ -8,10 +8,16 @@
 \[[Project](https://intelpro.github.io/UEVD/)\]
 
 ### Demo videos on real world blurry videos
+<img src="https://github.com/intelpro/UEVD_public/raw/main/figure/video_results_real_blur.gif" width="60%" height="60%">
+<!--
 ![real_blur_045_resized](/figure/video_results_real_blur.gif "real_blur_045_resized")
+-->
 
 ### Demo videos on real-world event datset
-![real_event_045_resized](/figure/video_results_real_event2.gif "real_event_045_resized")
+<img src="https://github.com/intelpro/UEVD_public/raw/main/figure/video_results_real_event3.gif" width="60%" height="60%">
+<!--
+![real_event_045_resized](/figure/video_results_real_event3.gif "real_event_045_resized")
+-->
 
 ## Color-DVS
 #### The first public event-based deblurring dataset. Our dataset contain diverse scene including real-world event using color-DAVIS camera.
