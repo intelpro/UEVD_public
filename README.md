@@ -47,7 +47,7 @@ python train_deblur_dvs.py --dataset 'dvs' --epochs 21 --batch_size 2 \
 
 ## Results
 * The quantitative comparisons are attached as belows for a reference.
-![table_2](/figure/table2.png "table_2")
+![table_2](/figure/table2.png=250x250 "table_2")
 
 
 
