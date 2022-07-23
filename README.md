@@ -13,7 +13,7 @@
 ![real_blur_045_resized](/figure/video_results_real_blur.gif "real_blur_045_resized")
 -->
 
-### Demo videos on real-world event datset
+### Demo videos on the real-world event datset(Color-DVS)
 <img src="https://github.com/intelpro/UEVD_public/raw/main/figure/video_results_real_event3.gif" width="60%" height="60%">
 <!--
 ![real_event_045_resized](/figure/video_results_real_event3.gif "real_event_045_resized")
