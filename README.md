@@ -48,6 +48,7 @@ python train_deblur_dvs.py --dataset 'dvs' --epochs 21 --batch_size 2 \
 ## Results
 * The quantitative comparisons are attached as belows for a reference.
 <img src="https://raw.githubusercontent.com/intelpro/UEVD_public/main/figure/table2.png" width="70%" height="70%">
+
 * The visual results of temporal activation map of the ETES modules on the vaious datasets.
 <img src="https://raw.githubusercontent.com/intelpro/UEVD_public/main/figure/Figure5.png" width="70%" height="70%">
 
