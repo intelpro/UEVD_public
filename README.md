@@ -36,6 +36,8 @@ This code was tested with:
 pip install -r requirements.txt
 bash install.sh
 ```
+## Pre-trained model
+TBD
 
 ## Test
 <!-- TBD: setup detail-->
