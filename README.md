@@ -37,7 +37,7 @@ pip install -r requirements.txt
 bash install.sh
 ```
 ## Pre-trained model
-TBD
+To be uploaded
 
 ## Test
 <!-- TBD: setup detail-->
