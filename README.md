@@ -70,7 +70,7 @@ python train_deblur_dvs.py --dataset 'dvs' --epochs 21 --batch_size 2 \
 ```bibtex
 @inproceedings{kim2021event,
   title={Event-guided Deblurring of Unknown Exposure Time Videos},
-  author={Kim, Taewoo and Lee, Jungmin and Wang, Lin and Yoon, Kuk-Jin},
+  author={Kim, Taewoo and Lee, Jeongmin and Wang, Lin and Yoon, Kuk-Jin},
   booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
   year={2022}
 }
