@@ -68,11 +68,11 @@ python train_deblur_dvs.py --dataset 'dvs' --epochs 21 --batch_size 2 \
 **BibTeX**
 <!-- TBD: Change to ECCV bibtex format-->
 ```bibtex
-@article{kim2021event,
+@inproceedings{kim2021event,
   title={Event-guided Deblurring of Unknown Exposure Time Videos},
   author={Kim, Taewoo and Lee, Jungmin and Wang, Lin and Yoon, Kuk-Jin},
-  journal={arXiv preprint arXiv:2112.06988},
-  year={2021}
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  year={2022}
 }
 ```
 
